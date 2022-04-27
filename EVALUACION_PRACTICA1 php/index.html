@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <body>
+     <h3 class="text-center py-3 bg-white shadow" style=>FORMULARIO</h3>
+                      <form class="container " style="padding-top: 30px;" method="post" action="imprimir.php">
+                          <div class="row">
+                              <div class="col-6 py-2">
+                                CLIENTE: <input maxlength="30" required style="width: 215px;" name="nombre" type="text">
+                             </div>
+                             <div class="col-6 py-2">
+                             FECHA: <input  name="fecha" style="width: 235px;" type="date"> 
+                             </div>
+
+                             <div class="w-100"></div>
+
+                             <div class="col-6 py-2">
+                             DIRECCION: <input maxlength="10" name="direccion" type="text"> 
+                              </div>
+                              <div class="col-6 py-2">
+                              REGISTRO N: <input name="registro" type="number">
+                              </div>
+                
+                              <div class="w-100"></div>
+                     
+                          <div class="col-6 py-2">
+                          DEPARTAMENTO:<select name="departamento" style="width: 155px;" name="" id="departament">
+                             <option value=""></option>
+                             <option value="ahuachapan">Ahuachap&aacute;n</option>
+                             <option value="cabanias">Cabañas</option>
+                             <option value="chalatenango">Chalatenango</option>
+                             <option value="cuscatlan">Cuscatl&aacute;n</option>
+                             <option value="laliberta">La Libertad</option>
+                             <option value="morazan">Moraz&aacute;n</option>
+                             <option value="lapaz">La Paz</option>
+                             <option value="santaana">Santa Ana</option>
+                             <option value="sanmiguel">San Miguel</option>
+                             <option value="sansalvador">San Salvador</option>
+                             <option value="sanvicente">San Vicente</option>
+                             <option value="sonsonate">Sonsonate</option>
+                             <option value="launion">L Uni&oacute;n</option>
+                             <option value="usulutan">Usulut&aacute;n</option>
+                              </select>
+                          </div>
+                        <div class="col-6 py-2">
+                                NIT: <input name="nit"  style="width: 250px;" type="number">
+                        </div>
+                        <div class="w-100"></div>
+
+                           <div class="col-6 py-2">
+                           GIRO: <input name="giro" style="width: 240px;" type="text">
+                           </div>
+                          <div class="col-6 py-2">
+                          CONDICIONES DE PAGO: <select name="condicion" style="width: 105px;" name="" id="pago">
+                            <option value=""></option>
+                         <option value="credito">Cr&eacute;dito</option> 
+                         <option value="contado">Contado</option>
+                        </select>
+                          </div>
+                    </div>
+                          
+                      </div>
+               
+          
+      
+        
+
+
+        <div class="container py-3">
+    <table class="table table-bordered border-dark" style="height: 20%; width: 40%; " >
+        <tr style="text-align: center;"> 
+            <th class="table-active">CANTIDAD</th>
+            <th id="col2" class="table-active">DESCRIPCION</th>
+            <th class="table-active">PRECIO <br>UNITARIO</th>
+            <th class="table-active">VENTAS <br>EXENTAS</th>
+            <th class="table-active">VENTAS <br>AFECTADAS</th>
+        </tr>
+        <tr>
+            <td><input required name="cantidad"   type="numbre"></td>
+            
+            <td ><input name="descripcion" type="text"></td>
+
+            <td><input name="preciou"  type="number"></td>
+          
+            <td><input name="venta"  type="text"></td>
+
+            <td><input name="ventaa" type="text"></td>
+        </tr>
+        <tr>
+            <td><input  name="cantidad2"  type="number"></td>
+            
+            <td><input name="descripcion2"  type="text" id="inp"></td>
+
+            <td><input name="preciou2" type="number"></td>
+          
+            <td><input name="venta2" type="text"></td>
+
+            <td><input name="ventaa2" type="text"></td>
+        </tr>
+        <tr>
+            <td><input  name="cantidad3" type="number"></td>
+            
+            <td><input  name="descripcion3" id="inp" type="text"></td>
+
+            <td><input name="preciou3" type="number"></td>
+          
+            <td><input name="venta3" type="text"></td>
+
+            <td><input name="ventaa3"  type="text"></td>
+        </tr>
+        
+        <tr >
+
+
+            <td  colspan="3" >
+                <div class="row" style="padding-bottom: 10px;">
+                    <div class="col">
+                        <h5>ENTREGADO POR:</h5>
+                        Nombre: <input style="width: 100%;" type="text"> <br> <br>
+                        DUI: <input style="width: 100%;" type="number" name="" id=""> <br> <br>
+                        FIRMA: <input style="width: 100%;" type="text">
+                    </div>
+                    <div class="col">
+                        <h5>RECIBIDO POR:</h5>
+                        Nombre: <input style="width: 100%;" type="text"> <br> <br>
+                        DUI: <input style="width: 100%;" type="number"> <br> <br>
+                        Firma: <input style="width: 100%;" type="text">
+                    </div>
+                </div>
+                Observaciones: <input style="width: 100%;" name="obsevaciones" type="text"><br> <br>
+                Cancelado: <input style="width: 100%;" name="cancelado" type="text">
+            </td>
+            <td colspan="2" style="padding-bottom: 10px; padding-top: 80px;"> 
+                Sumas <input style="width: 40%;"  name="suma" type="number"><br> <br>
+                IVA: <input style="width: 45%;" name="iva" type="number"><br> <br>
+                Sub total: <input style="width: 38%;" name="sub" type="number"><br> <br>
+                Ventas exintas: <input style="width: 30%;" name="Ventasexi" type="number"><br> <br>
+                Venta total: <input style="width: 35%;" name="total" type="number">
+            </td>
+        </tr>
+       
+    </table>
+    </div>
+    
+        <button class="btn btn-secondary  bg-dark"  type="submit">ENVIAR</button>
+
+    
+</form>
+
+    
+    
+   
+</body>
+</html>
+
